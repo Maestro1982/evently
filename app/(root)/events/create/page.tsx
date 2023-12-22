@@ -6,6 +6,8 @@ const CreateEventPage = () => {
   const { sessionClaims } = auth();
 
   const userId = sessionClaims?.userId as string;
+  console.log(userId);
+
   return (
     <>
       <section className='bg-primary-50 bg-dotted-pattern bg-cover bg-center py-5 md:py-10'>
@@ -20,4 +22,5 @@ const CreateEventPage = () => {
     </>
   );
 };
+
 export default CreateEventPage;
