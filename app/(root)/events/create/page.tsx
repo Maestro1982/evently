@@ -5,6 +5,8 @@ import EventForm from '@/components/shared/event-form';
 const CreateEventPage = () => {
   const { sessionClaims } = auth();
 
+  console.log('Session Claims:', sessionClaims);
+
   const userId = sessionClaims?.userId as string;
   console.log(userId);
 
